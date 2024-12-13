@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtCategoryId = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnList = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCategoryName = new System.Windows.Forms.TextBox();
@@ -60,14 +60,15 @@
             this.txtCategoryId.Size = new System.Drawing.Size(174, 20);
             this.txtCategoryId.TabIndex = 1;
             // 
-            // button1
+            // btnList
             // 
-            this.button1.Location = new System.Drawing.Point(137, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Listele";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnList.Location = new System.Drawing.Point(137, 127);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(174, 28);
+            this.btnList.TabIndex = 2;
+            this.btnList.Text = "Listele";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // dataGridView1
             // 
@@ -132,6 +133,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -141,6 +143,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -150,6 +153,7 @@
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnGetById
             // 
@@ -159,6 +163,7 @@
             this.btnGetById.TabIndex = 2;
             this.btnGetById.Text = "ID\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // FrmCategory
             // 
@@ -172,7 +177,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnList);
             this.Controls.Add(this.txtCategoryName);
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.label3);
@@ -190,7 +195,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCategoryId;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCategoryName;
