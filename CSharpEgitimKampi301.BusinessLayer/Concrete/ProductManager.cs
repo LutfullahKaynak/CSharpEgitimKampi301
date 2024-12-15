@@ -33,6 +33,13 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concrete
             return _productDal.GetById(id);
             //throw new NotImplementedException();
         }
+
+        public List<object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
+            //throw new NotImplementedException();
+        }
+
         public void TInsert(Product entity)
         {
             _productDal.Insert(entity);
