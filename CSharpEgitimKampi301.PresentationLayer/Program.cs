@@ -17,7 +17,9 @@ namespace CSharpEgitimKampi301.PresentationLayer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new FrmCategory());
-            Application.Run(new FrmProduct());
+             Application.Run(new FrmProduct());
+            // Application.Run(new FrmCategory());
+
         }
     }
 }
